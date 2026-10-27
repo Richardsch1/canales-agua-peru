@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.0",
+  "country": "PE",
+  "language": "es-PE",
+  "notice": "Catálogo inicial y limitado. Confirma vigencia, cobertura y requisitos en la fuente oficial. No identifica automáticamente al prestador competente ni realiza trámites.",
+  "channels": [
+    {
+      "id": "sunass-fono",
+      "name": "Fono SUNASS",
+      "organization": "SUNASS",
+      "kind": "phone",
+      "contact": "1899",
+      "needs": ["orientacion"],
+      "provider": "cualquiera",
+      "providerContactedRequired": false,
+      "coverage": "Orientación nacional sobre agua y alcantarillado. No equivale a atención directa de reparaciones.",
+      "conditions": "Confirma con SUNASS el procedimiento aplicable a tu prestador y localidad.",
+      "checkedOn": "2026-10-27",
+      "reviewWithinDays": 90,
+      "sources": [
+        {
+          "url": "https://www.gob.pe/43281-conoce-las-plataformas-de-atencion-y-orientacion-de-usuarios-de-la-sunass",
+          "title": "SUNASS: plataformas de atención y orientación de usuarios",
+          "evidence": "La fuente identifica 1899 como línea gratuita nacional de orientación y señala que el regulador no atiende directamente el problema operativo.",
+          "method": "official-indexed-text"
+        }
+      ]
+    },
+    {
+      "id": "sunass-whatsapp-operativo",
+      "name": "WhatsApp de SUNASS para problemas operativos",
+      "organization": "SUNASS",
+      "kind": "whatsapp",
+      "contact": "(01) 614 3180",
+      "needs": ["operativo"],
+      "provider": "cualquiera",
+      "providerContactedRequired": true,
+      "coverage": "Problemas operativos de agua y alcantarillado que no han sido atendidos por el prestador.",
+      "conditions": "Primero contacta al prestador. Este canal no es una vía general para consultas de facturación ni ejecuta reparaciones directamente.",
+      "checkedOn": "2026-10-27",
+      "reviewWithinDays": 90,
+      "sources": [
+        {
+          "url": "https://www.gob.pe/institucion/sunass/contacto-y-numeros-de-emergencias",
+          "title": "SUNASS: contacto y números de atención",
+          "evidence": "La ficha publica WhatsApp 1 614 3180 para problemas operativos no atendidos por la EPS.",
+          "method": "official-indexed-text"
+        },
+        {
+          "url": "https://www.gob.pe/institucion/sunass/noticias/1384581-problemas-con-los-servicios-de-saneamiento-sunass-recuerda-sus-canales-gratuitos-de-atencion-a-usuarios",
+          "title": "SUNASS: canales gratuitos de atención, abril de 2026",
+          "evidence": "Corrobora (01) 614 3180 para problemas operativos y distingue la orientación de Fono SUNASS 1899.",
+          "method": "official-indexed-text"
+        }
+      ]
+    },
+    {
+      "id": "sunass-correo-orientacion",
+      "name": "Correo de orientación de SUNASS",
+      "organization": "SUNASS",
+      "kind": "email",
+      "contact": "sunass@sunass.gob.pe",
+      "needs": ["orientacion"],
+      "provider": "cualquiera",
+      "providerContactedRequired": false,
+      "coverage": "Orientación a usuarios sobre agua y alcantarillado.",
+      "conditions": "Confirma el canal y los requisitos antes de enviar información. La biblioteca no envía correos ni formularios.",
+      "checkedOn": "2026-10-27",
+      "reviewWithinDays": 90,
+      "sources": [
+        {
+          "url": "https://www.gob.pe/institucion/sunass/contacto-y-numeros-de-emergencias",
+          "title": "SUNASS: contacto y números de atención",
+          "evidence": "La ficha identifica sunass@sunass.gob.pe para orientación a usuarios vía correo.",
+          "method": "official-indexed-text"
+        }
+      ]
+    },
+    {
+      "id": "sedapal-aquafono",
+      "name": "Sedapal Aquafono",
+      "organization": "Sedapal",
+      "kind": "phone",
+      "contact": "(01) 317 8000",
+      "needs": ["orientacion", "operativo"],
+      "provider": "sedapal",
+      "providerContactedRequired": false,
+      "coverage": "Solo usuarios atendidos por Sedapal. No se deduce la cobertura por departamento o distrito.",
+      "conditions": "Usar únicamente si la persona confirmó que Sedapal es su prestador. Consulta información y requisitos en la fuente.",
+      "checkedOn": "2026-10-27",
+      "reviewWithinDays": 90,
+      "sources": [
+        {
+          "url": "https://www.gob.pe/institucion/sedapal/pages/12786-llamar-a-sedapal-aquafono",
+          "title": "Sedapal: llamar a Aquafono",
+          "evidence": "La página oficial publica (01) 3178000 para consultas de recibos y reportes de falta de agua o problemas de alcantarillado.",
+          "method": "official-indexed-text"
+        }
+      ]
+    },
+    {
+      "id": "sunass-formatos",
+      "name": "Formatos de atención y reclamo de SUNASS",
+      "organization": "SUNASS",
+      "kind": "resource",
+      "contact": "Consultar publicación oficial",
+      "needs": ["formatos"],
+      "provider": "cualquiera",
+      "providerContactedRequired": false,
+      "coverage": "Publicación con formatos para problemas particulares, de alcance general y recursos de reclamo.",
+      "conditions": "Es un recurso documental. Confirma con el prestador o SUNASS qué formato corresponde; no se decide el procedimiento ni los plazos.",
+      "checkedOn": "2026-10-27",
+      "reviewWithinDays": 90,
+      "sources": [
+        {
+          "url": "https://www.gob.pe/institucion/sunass/informes-publicaciones/4502284-formatos-para-presentar-un-reclamo-en-servicios-de-agua-potable-y-saneamiento",
+          "title": "SUNASS: formatos para presentar un reclamo en servicios de agua potable y saneamiento",
+          "evidence": "La publicación lista solicitudes de atención particulares y de alcance general, presentación de reclamo, reconsideración y apelación.",
+          "method": "official-indexed-text"
+        }
+      ]
+    }
+  ]
+}

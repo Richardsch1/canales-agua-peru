@@ -1,0 +1,20 @@
+{
+  "name": "canales-agua-peru",
+  "version": "0.1.0",
+  "description": "Catálogo inicial de canales oficiales de agua y saneamiento en Perú, con fuentes y revisión por entrada.",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "exports": { ".": "./src/index.js", "./catalog.json": "./data/catalog.json" },
+  "bin": { "canales-agua": "./bin/canales-agua.js" },
+  "files": ["src", "bin", "data", "README.md", "LICENSE"],
+  "scripts": {
+    "start": "node bin/canales-agua.js list",
+    "test": "node --test",
+    "check": "node scripts/check.js",
+    "catalog:validate": "node bin/canales-agua.js validate",
+    "catalog:csv": "node bin/canales-agua.js export --format csv",
+    "sources:check": "node bin/canales-agua.js check-links --allow-network"
+  }
+}
